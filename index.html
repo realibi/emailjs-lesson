@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="email_input" placeholder="Email">
+    <br>
+    <input type="number" id="verification_code_input" placeholder="Code">
+    <br>
+    <button id="send_email_button">Отправить письмо</button>
+    <button id="login_button">Авторизоваться</button>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_ff1FMAT2kdXu57dcA5kiB");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
